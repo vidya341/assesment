@@ -1,0 +1,9 @@
+Problem: Bat programmer in the Arkham City help Bat Man capture Asylum escapees
+
+SOlution:-
+def find(n,s):
+    return n*s
+n = int(input())
+s = int(input())
+a = find(n,s)
+print(a)
