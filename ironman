@@ -17,8 +17,7 @@ def planet(n,arr):
             count.append(k+1)
             count.append(maxi)
     return count
-    #count_ =list["f_","l_","maxi"]
-    #return count_
+    
     
     
 n = int(input())
