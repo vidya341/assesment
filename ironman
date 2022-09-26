@@ -21,7 +21,7 @@ def planet(n,arr):
     
     
 n = int(input())
-N = int(input())
+N = 3
 arr = []
 for i in range(0,N):
     g = list(map(int,input().split()))
