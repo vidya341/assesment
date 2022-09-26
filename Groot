@@ -1,0 +1,23 @@
+Problem: Groot's pie finder
+
+Solution:-
+def groot_pies(arr,sweet):
+    count=[]
+    sum_=0
+    for i in range(0,len(arr)):
+        if arr[i]==sweet:
+            return i
+        else:
+            if arr[i]<sweet:
+                for j in range(i,len(arr)):
+                    sum_ += arr[j]
+                    if sum_<=sweet:
+                        count.append(j)
+                    if sum_ ==sweet:
+                        return count
+
+    
+arr = list(map(int , input().split()))
+sweet = int(input())
+ans = groot_pies(arr,sweet)
+print(ans)
