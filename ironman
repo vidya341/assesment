@@ -1,0 +1,32 @@
+Problem: Ironman's legacy in trouble
+
+Solution:-
+def planet(n,arr):
+    a  = [0]*n
+    for i in range(0,N):
+        m = arr[i][0]
+        n = arr[i][1]
+        q = arr[i][2]
+        for j in range(m,n):
+            a[j] += q
+    count=[]
+    maxi = max(a)
+    for k in range(0,n):
+        if a[k] == maxi:
+            count.append(k)
+            count.append(k+1)
+            count.append(maxi)
+    return count
+    #count_ =list["f_","l_","maxi"]
+    #return count_
+    
+    
+n = int(input())
+N = int(input())
+arr = []
+for i in range(0,N):
+    g = list(map(int,input().split()))
+    arr.append(g) 
+
+ans = planet(n,arr)
+print(ans)
